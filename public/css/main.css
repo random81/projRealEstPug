@@ -1,0 +1,374 @@
+#loanErr,
+#interestErr,
+#monthsErr,
+.map_tab,
+.calc_tab,
+.comp_tab, #response, #dates, #table, #nameB, #name, #datesB, #titles, nav, div, #wrapper, main, a, header, body, h1, h2, p, li, ul, footer {padding: 0; margin: 0;}
+body {font:  75%/1.4 verdana,geneva,lucida,arial,sans
+serif; color: #000;}
+
+body{font-size:90%; line-height: 1.5; font-family: Helvetica, Verdana, Sans-serif; color: #333;}
+
+header a {float:right; color: white; margin-top: -131px;
+    margin-right: 40px;}
+
+th {background-color: #E6E6E6;}
+
+#loanErr {display:none;}
+#interestErr {display:none;}
+#monthsErr {display:none;}
+
+.errorMap {display:none;}
+.error {display:none;}
+
+
+.add_property {
+    width: 230px;
+}
+
+#addListProp {
+    width: 530px;
+}
+
+#app div#labels {
+    width: 33%;
+    margin-left: -40px;
+    float: left;
+}
+
+main article #fields input {
+    width :49%;
+    margin-left: -49px;
+    margin-top: 7px;
+}
+
+#app div#labels p {
+    text-align: right;
+    margin-top: 8px;
+}
+
+#error p {
+    line-height: 16px;
+    color:red;
+}
+
+#monthsErr {
+    position: absolute;
+    margin-top: 142px;
+    margin-left: 72px;
+}
+
+#interestErr {
+    position: absolute;
+    margin-top: 113px;
+    margin-left: 73px;
+}
+
+
+#loanErr {
+    position: absolute;
+    margin-top: 86px;
+    margin-left: 73px;
+}
+
+
+#error {display:none;
+    float: right;
+    margin-top: -76px;
+
+}
+
+.dates {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 33%;
+    float: left;
+}
+
+main article:nth-of-type(2) {float:right; width: 510px;  min-height: 530px;
+    background-color: #E6E6E6;     margin-top: 48px;
+}
+main article {float:left;}
+main article article:nth-of-type(1) {float:left;}
+
+.map_tab {     margin: 0px 5px;
+
+    background-color: white; float: left;
+    width: 70px;
+    height: 30px;}
+
+
+.map_tab p{
+    text-align: center;}
+
+
+.calc_tab p{
+    text-align: center;}
+
+
+
+.comp_tab p{
+    text-align: center;}
+
+
+.calc_tab { background-color: white;
+    width: 70px;     float: left;     margin: 0px 5px;
+
+
+    height: 30px;}
+.comp_tab { background-color: white;
+    width: 70px;     float: left;
+
+    height: 30px;     margin: 0px 5px;
+
+}
+
+.datesB {
+    text-align: center;}
+
+.name {
+    width: 33%;
+    /*float: left;*/
+    text-align: center;
+    text-decoration: underline;
+}
+
+div#table {
+    width: 89%;
+    margin: 40px;
+    border: 1px solid black;
+
+}
+
+.nameB {
+    width: 59%;
+    float: left;
+    text-align: center;
+    border: 1px solid black;
+}
+
+.row1 {
+    background-color: blue;
+}
+
+
+#titles {background-color: blue; border: 1px solid black;}
+
+#wrapper {    margin: 0 auto;
+    max-width: 700px;
+    border-color: black;
+    min-width: 1060px;
+    border: 1px solid black;
+    border-radius: 10px;
+
+}
+
+form {
+    padding: 10px 0 10px 0;
+}
+
+nav {border-style: solid;
+    border-width: 1px;}
+nav ul {padding: 5px;}
+
+
+nav ul li {display: inline; border-right:1px solid black; list-style: none;}
+nav ul li a{color: black; text-decoration: none; border-width: 1px 0 1px 0; padding: 9px;
+}
+
+.tabs {background-color: #146a7d;
+    padding-top: 14px;
+    padding-left: 10px;
+    padding-bottom: 30px;
+}
+
+main article:nth-of-type(1) fieldset {color:blue;}
+fieldset {border: 2px solid orange;}
+
+header {padding-top: 19px;}
+
+header {background-color: #146a7d; border-width: 1px 0 1px 0;}
+header {color:white; background-color: #146a7d;
+    border-width: 1px 0 1px 0;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;}
+header p:nth-of-type(1) {margin-top: 50px;}
+.clear {clear: both;}
+
+main {border: 1px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    min-width: 760px;}
+.name {float:left;}
+
+.row:nth-of-type(even) {background-color: gray;  z-index:10;}
+
+.name1 {float:left;
+    background-color: #62BEF1;
+    width: 33%;
+    text-align: center;
+}
+
+.date {
+    border-left: 1px solid black;
+    text-align: center;
+    width: 33%;
+    float: left;
+    border-right: 1px solid black;
+}
+
+.address {
+    float: left;
+    background-color: #62BEF1;
+    text-align: center;
+    width: 35%;
+    float: left;
+}
+
+.contact {
+    float: right;
+}
+
+.delete {
+    text-align: center;
+    width: 33%;
+    float: left;
+    text-decoration: underline;
+
+}
+
+
+.city {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 25%;
+    float: left;
+
+}
+
+.state {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 10%;
+    float: left;
+
+}
+
+
+.zip {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 10%;
+    float: left;
+
+}
+
+.amount {
+    background-color: #62BEF1;
+    text-align: center;
+    width: 20%;
+    float: left;
+
+}
+
+#acknowledgement{
+    height: 150px;
+    width: 150px;
+    background-color: blue;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    display: none;
+    top: 200px;
+}
+
+#savingcms
+{
+    height: 450px;
+    width: 450px;
+    background-color: white;
+    color: white;
+    position: absolute;
+    padding: 5px;
+    border-radius: 10px;
+    box-shadow: 10px 10px 5px #888888;
+    display: none;
+    top: 200px;
+
+
+}
+header p input {margin-top: 20px;}
+header p {padding:10px;}
+
+
+header p:nth-of-type(2) {
+    display: inline;
+}
+
+header p:nth-of-type(4) {
+    display: inline;
+}
+header p:nth-of-type(1) {
+    display: inline;
+}
+header p:nth-of-type(3) {
+    display: inline;
+}
+
+/*#address {display: inline;
+    float: left;}
+*/
+div#contact {
+    float: right;
+    display: inline;
+}
+
+input#second {
+    margin-left: -20px;
+}
+
+label {
+    display: block;
+}
+
+div#fields {
+    width: 48%;
+    float: right;
+    margin-right: 80px;
+    margin-top: 5px;
+}
+
+label p{
+    text-align: right;
+}
+
+
+input#fileName {
+    display: block;
+}
+
+main article input {display:block;}
+
+#map {width:510px;}
+
+.remove {color:blue;}
+.view {color:blue;}
+.view:hover{cursor: pointer;}
+.remove:hover{cursor: pointer;}
+
+#answer {display:none;
+}
+#answer p {
+    float: right;
+    width: 230px;
+    color: blue;
+    margin-top: -68px;
+}
+
+main #calculator input {
+    margin-top: 120px;
+}
+
+.map_tab, .calc_tab, .comp_tab:hover{cursor: pointer;}

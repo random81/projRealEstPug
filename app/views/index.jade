@@ -1,0 +1,85 @@
+doctype html
+html(lang='en')
+	head
+		block head
+			meta(charset='utf-8')
+	body
+		div#wrapper
+			header
+				block header
+					h1 Real Estate Application
+					p Attention: 
+					.clear
+					p You need to assign "apiKeyZillow" variable a zillow-api key for the app to work
+			main
+				block main
+					article
+						fieldset
+							legend Enter Property Address:
+							form
+								label Address:
+									input(input type="text" required  name="address" size="25" id="address") 
+								label City:
+									input(input type="text" required  name="city" size="25" id="city") 
+								label State:
+									input(input type="text" required  name="state" size="25" id="state") 
+								label Zip:
+									input(input type="text" required  name="zip" size="25" id="zip") 
+								br
+								br
+								input(type="submit" id="submitBtn" value="submit")
+						.add_property
+							input(type="submit" value="Add Property To List" id="AddBtn")
+							p My Properties List
+								#addListProp 
+					article 
+						.tabs
+							.map_tab
+								p Map
+							.calc_tab
+								p Calc
+							.comp_tab
+								p Comps
+						.clear
+						#app
+							block #app
+								#tableDiv
+									#response
+									.error we are sorry there is no comparison information for the address that you entered
+								#mapdiv
+									.mapTitle map will appear here AFTER YOU ADD ZILLOW API KEY to .controller.js file in 2 locations
+									.errorMap we are sorry there is no map information for the address that you entered
+									#map
+								#output
+								#calculator
+									fieldset
+										legend Loan Calculator
+										form(id="calculator" enctype="multipart/form-data" action="/sermons-admin" method="post")
+										#labels
+											label 
+												p Loan Amount:
+											label 
+												p Interest:
+											label
+												p Number of Months:
+										#fields
+											input(input type="text" size="25" id="amount")
+											input(input type="text" size="25" id="interest")
+											input(input type="text" size="25" id="months")
+										#error  
+											#loanErr 
+												p <-- you must enter a positive whole </br> number greater than zero 
+											#interestErr 
+												p <--You must enter a number greater </br>  thatn or equal to .1
+											#monthsErr 
+												p <--You must enter a positive whole </br>  number greater than zero
+										#answer
+											p  
+										input(type="button" value="Get monthly amount" id="getBtn")
+
+
+
+
+						.clear
+			.clear
+		script(src="http://maps.google.com/maps/api/js?sensor=false")

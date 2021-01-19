@@ -1,0 +1,48 @@
+{
+	"name": "RealEstate",
+	"version": "0.0.1",
+	"dependencies": {
+		"@babel/cli": "^7.12.10",
+		"@babel/node": "^7.12.10",
+		"@babel/runtime-corejs3": "^7.12.5",
+		"axios": "^0.21.1",
+		"body-parser": "^1.19.0",
+		"css-loader": "^5.0.1",
+		"express": "4.8.8",
+		"html-webpack-plugin": "^4.5.0",
+		"html-webpack-pug-plugin": "^2.0.0",
+		"jade": "^1.11.0",
+		"jquery": "^3.5.1",
+		"mini-css-extract-plugin": "^1.3.3",
+		"npx": "^10.2.2",
+		"optimize-css-assets-webpack-plugin": "^5.0.4",
+		"path": "^0.12.7",
+		"pug-html-loader": "^1.1.5",
+		"terser-webpack-plugin": "^5.0.3",
+		"webpack-node-externals": "^2.5.2"
+	},
+	"devDependencies": {
+		"@babel/core": "^7.12.10",
+		"@babel/preset-env": "^7.12.11",
+		"babel-loader": "^8.2.2",
+		"eslint": "^5.16.0",
+		"eslint-config-airbnb-base": "^14.2.1",
+		"eslint-plugin-import": "^2.22.1",
+		"webpack": "^5.15.0",
+		"webpack-cli": "^4.3.0"
+	},
+	"nodemonConfig": {
+		"exec": "npm start",
+		"watch": [
+			"../projRealEstPug/*"
+		]
+	},
+	"scripts": {
+		"lint": "eslint ./",
+		"buildDev": "webpack --mode=development --config webpack.config.js && webpack --mode=development --config webpack.config_e6.server.js",
+		"build": "webpack --config webpack.config.front.production.js && webpack --mode=production --config webpack.config_e6.server.js",
+		"start": "NODE_ENV=development node ./build/server.generated.js",
+		"dev": "npm run buildDev && nodemon ./build/server.generated.js",
+		"prod": "npm run build && NODE_ENV=production node ./build/server.generated.js"
+	}
+}
