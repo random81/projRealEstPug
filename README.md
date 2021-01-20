@@ -13,5 +13,4 @@
    - To build and run the application for production, run "npm run prod"
    - To run the application for development without rebuilding, run "nodemon"
 3. Open [localhost:3000](http://localhost:3000/) in the browser
-4. If you are not using local host replace localhost with the correct address.
-5. If you encounter an initial problem running the app try making a trivial change in the code and building again.
+4. If you encounter an initial problem running the app try making a trivial change in the code and building again.
